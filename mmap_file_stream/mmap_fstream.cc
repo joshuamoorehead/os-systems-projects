@@ -1,4 +1,4 @@
-// Copyright Joshua Moorehead CSCE311 SP23
+// Copyright Joshua Moorehead 2023
 
 #include "./mmap_fstream.h"
 
