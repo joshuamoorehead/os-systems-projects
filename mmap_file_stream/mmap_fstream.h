@@ -1,4 +1,4 @@
-// Copyright Joshua Moorehead CSCE311 Apr22,2023
+// Copyright Joshua Moorehead 2023
 //
 //
 #ifndef MMAP_FSTREAM_H_
