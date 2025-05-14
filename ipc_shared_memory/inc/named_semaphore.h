@@ -1,4 +1,4 @@
-// Copyright 2022 CSCE 311
+
 
 #ifndef INC_NAMED_SEMAPHORE_H_
 #define INC_NAMED_SEMAPHORE_H_
