@@ -1,4 +1,4 @@
-# Joshua Moorehead Project3 Client Server Shared Memory IPC CSCE311-001
+# Joshua Moorehead Client Server Shared Memory IPC 2023
 
 This project's use is to demonstrate IPC with shared memory between a server and a client. The server and clients use the same shared memory to communicate. The objective of the communication is to pass a csv file and search it for matching output to stdlog. Several files detailed below facilitate the communication and sorting of csv data. This project's main concepts included shared memory and semaphores (named) between processes, and multithreading. 
 
