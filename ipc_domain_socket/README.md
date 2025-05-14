@@ -1,4 +1,4 @@
-# Joshua Moorehead Project2 Client Server CSCE311-001
+# Joshua Moorehead Client Server Copyright Feb 2023
 
 This project's use is to demonstrate IPC between a server and multiple clients. The server and clients use several different Unix Domain Sockets to communicate. The objective of the communication is to find certain strings in a given csv file based on search commands from the command line. Several files detailed below facilitate the communication and sorting of csv data. 
 
