@@ -1,4 +1,4 @@
-# Joshua Moorehead Project1 Calculate CSCE311-001
+# Joshua Moorehead Calculator
 
 This project's use is to calculate some math after it receives input from the command line such as 5 + 3 = 8 using a stack
 
