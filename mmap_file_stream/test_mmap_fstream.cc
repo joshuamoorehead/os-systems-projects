@@ -1,7 +1,5 @@
-// Copyright 2023 CSCE 311
-//
 #include <mmap_fstream.h>
-#include <mmap_fstream.h>  // DO NOT DELETE, NOLINT
+#include <mmap_fstream.h>  
 
 #include <cstddef>
 #include <iostream>
