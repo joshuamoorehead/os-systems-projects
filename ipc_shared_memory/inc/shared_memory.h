@@ -1,4 +1,3 @@
-// Copyright from Lewis's Github
 #ifndef INC_SHARED_MEMORY_H_
 #define INC_SHARED_MEMORY_H_
 
