@@ -1,4 +1,4 @@
-// Copyright Joshua Moorehead CSCE311 2023SP
+// Copyright Joshua Moorehead March2023
 
 #include "../inc/server.h"
 
