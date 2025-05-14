@@ -1,4 +1,4 @@
-// Copyright Joshua Moorehead CSCE311SP23
+// Copyright Joshua Moorehead 
 
 #ifndef INC_SERVER_H_
 #define INC_SERVER_H_
