@@ -1,4 +1,3 @@
-// Copyright Lewis Github
 #ifndef INC_SOCK_H_
 #define INC_SOCK_H_
 
