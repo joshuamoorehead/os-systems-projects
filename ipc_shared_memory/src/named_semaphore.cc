@@ -1,7 +1,3 @@
-// Copyright 2022 CSCE 311
-//
-
-
 #include "../inc/named_semaphore.h"
 
 
