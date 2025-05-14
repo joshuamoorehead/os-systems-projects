@@ -1,4 +1,4 @@
-# Joshua Moorehead Project4 fstream CSCE311-001
+# Joshua Moorehead fstream 2023
 
 This project's use is to replace a subset of the fstream library. My goal was to correctly open and determine the size of a file, map that file to memory, be able to read from the file, and write/append to the file in memory. This project used memory mapping to achieve everything with the file.
 
