@@ -4,7 +4,7 @@ This repository contains a series of C++ systems programming projects developed 
 
 ---
 
-## 🔧 Projects
+## Projects
 
 ### `cli_expr_parser/`
 A command-line expression parser that evaluates arithmetic input using custom operand and operator stacks. Demonstrates manual parsing, stack-based evaluation, and expression tree reduction logic.
@@ -20,7 +20,7 @@ A custom fstream-like implementation using the `mmap()` system call. Enables rea
 
 ---
 
-## 🛠 Build & Run
+## Build & Run
 
 Each folder contains its own `Makefile` and README instructions. To build a project:
 
@@ -38,7 +38,7 @@ make clean
 
 ---
 
-## 🧠 Topics Covered
+## Topics Covered
 
 - Unix domain sockets
 - POSIX shared memory and semaphores
