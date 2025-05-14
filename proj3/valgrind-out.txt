@@ -1,0 +1,188 @@
+==26774== Memcheck, a memory error detector
+==26774== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26774== Using Valgrind-3.18.1-42b08ed5bd-20211015 and LibVEX; rerun with -h for copyright info
+==26774== Command: ./csv-server
+==26774== Parent PID: 5093
+==26774== 
+--26774-- 
+--26774-- Valgrind options:
+--26774--    --leak-check=full
+--26774--    --show-leak-kinds=all
+--26774--    --track-origins=yes
+--26774--    --verbose
+--26774--    --log-file=valgrind-out.txt
+--26774-- Contents of /proc/version:
+--26774--   Linux version 5.19.0-38-generic (buildd@lcy02-amd64-001) (x86_64-linux-gnu-gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2
+--26774-- 
+--26774-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand-rdseed
+--26774-- Page sizes: currently 4096, max supported 4096
+--26774-- Valgrind library directory: /usr/libexec/valgrind
+--26774-- Reading syms from /home/joshuamoo/Desktop/CSCE311/proj3/csv-server
+--26774-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+--26774--   Considering /usr/lib/debug/.build-id/61/ef896a699bb1c2e4e231642b2e1688b2f1a61e.debug ..
+--26774--   .. build-id is valid
+--26774-- Reading syms from /usr/libexec/valgrind/memcheck-amd64-linux
+--26774--    object doesn't have a symbol table
+--26774--    object doesn't have a dynamic symbol table
+--26774-- Scheduler: using generic scheduler lock implementation.
+--26774-- Reading suppressions file: /usr/libexec/valgrind/default.supp
+==26774== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-26774-by-joshuamoo-on-???
+==26774== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-26774-by-joshuamoo-on-???
+==26774== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-26774-by-joshuamoo-on-???
+==26774== 
+==26774== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==26774== don't want to do, unless you know exactly what you're doing,
+==26774== or are doing some strange experiment):
+==26774==   /usr/bin/vgdb --pid=26774 ...command...
+==26774== 
+==26774== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==26774==   /path/to/gdb ./csv-server
+==26774== and then give GDB the following command
+==26774==   target remote | /usr/bin/vgdb --pid=26774
+==26774== --pid is optional if only one valgrind process is running
+==26774== 
+--26774-- REDIR: 0x402aa60 (ld-linux-x86-64.so.2:strlen) redirected to 0x580bcec2 (???)
+--26774-- REDIR: 0x402a830 (ld-linux-x86-64.so.2:index) redirected to 0x580bcedc (???)
+--26774-- Reading syms from /usr/libexec/valgrind/vgpreload_core-amd64-linux.so
+--26774--    object doesn't have a symbol table
+--26774-- Reading syms from /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so
+--26774--    object doesn't have a symbol table
+==26774== WARNING: new redirection conflicts with existing -- ignoring it
+--26774--     old: 0x0402aa60 (strlen              ) R-> (0000.0) 0x580bcec2 ???
+--26774--     new: 0x0402aa60 (strlen              ) R-> (2007.0) 0x0484ee30 strlen
+--26774-- REDIR: 0x4027240 (ld-linux-x86-64.so.2:strcmp) redirected to 0x484fcd0 (strcmp)
+--26774-- REDIR: 0x402afc0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4853840 (mempcpy)
+--26774-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+--26774--    object doesn't have a symbol table
+--26774-- Reading syms from /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+--26774--    object doesn't have a symbol table
+--26774-- Reading syms from /usr/lib/x86_64-linux-gnu/libc.so.6
+--26774--   Considering /usr/lib/debug/.build-id/69/389d485a9793dbe873f0ea2c93e02efaa9aa3d.debug ..
+--26774--   .. build-id is valid
+==26774== WARNING: new redirection conflicts with existing -- ignoring it
+--26774--     old: 0x04b5fce0 (memalign            ) R-> (1011.0) 0x0484e080 memalign
+--26774--     new: 0x04b5fce0 (memalign            ) R-> (1017.0) 0x0484e050 aligned_alloc
+==26774== WARNING: new redirection conflicts with existing -- ignoring it
+--26774--     old: 0x04b5fce0 (memalign            ) R-> (1011.0) 0x0484e080 memalign
+--26774--     new: 0x04b5fce0 (memalign            ) R-> (1017.0) 0x0484e020 aligned_alloc
+==26774== WARNING: new redirection conflicts with existing -- ignoring it
+--26774--     old: 0x04b5fce0 (memalign            ) R-> (1011.0) 0x0484e080 memalign
+--26774--     new: 0x04b5fce0 (memalign            ) R-> (1017.0) 0x0484e050 aligned_alloc
+==26774== WARNING: new redirection conflicts with existing -- ignoring it
+--26774--     old: 0x04b5fce0 (memalign            ) R-> (1011.0) 0x0484e080 memalign
+--26774--     new: 0x04b5fce0 (memalign            ) R-> (1017.0) 0x0484e020 aligned_alloc
+--26774-- Reading syms from /usr/lib/x86_64-linux-gnu/libm.so.6
+--26774--   Considering /usr/lib/debug/.build-id/27/e82301dba6c3f644404d504e1bb1c97894b433.debug ..
+--26774--   .. build-id is valid
+--26774-- REDIR: 0x4b627a0 (libc.so.6:strnlen) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b62a60 (libc.so.6:strpbrk) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b62360 (libc.so.6:strcmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b80d50 (libc.so.6:wcsnlen) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63750 (libc.so.6:memset) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b7f5c0 (libc.so.6:wcslen) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63c90 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b7f3f0 (libc.so.6:wcschr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b622e0 (libc.so.6:index) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b629e0 (libc.so.6:rindex) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63620 (libc.so.6:memmove) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+==26774== Preferring higher priority redirection:
+--26774--     old: 0x04c5a940 (__memcpy_avx_unalign) R-> (2018.0) 0x04850f90 __memcpy_avx_unaligned_erms
+--26774--     new: 0x04c5a940 (__memcpy_avx_unalign) R-> (2018.1) 0x04852880 memmove
+--26774-- REDIR: 0x4b7f470 (libc.so.6:wcscmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63a60 (libc.so.6:stpncpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b7fa30 (libc.so.6:wmemchr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b628b0 (libc.so.6:strncmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63af0 (libc.so.6:strcasecmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b624a0 (libc.so.6:strcspn) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b7f4f0 (libc.so.6:wcscpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b62250 (libc.so.6:strcat) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63be0 (libc.so.6:strncasecmp_l) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63500 (libc.so.6:bcmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b6b5f0 (libc.so.6:memrchr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b65090 (libc.so.6:strchrnul) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b62410 (libc.so.6:strcpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63b90 (libc.so.6:strcasecmp_l) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b62720 (libc.so.6:strlen) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b62950 (libc.so.6:strncpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b639d0 (libc.so.6:stpcpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63470 (libc.so.6:memchr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b62b80 (libc.so.6:strspn) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63850 (libc.so.6:mempcpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b63b40 (libc.so.6:strncasecmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4b65000 (libc.so.6:rawmemchr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--26774-- REDIR: 0x4c57790 (libc.so.6:__strrchr_avx2) redirected to 0x484e810 (rindex)
+--26774-- REDIR: 0x4b5f120 (libc.so.6:malloc) redirected to 0x4848820 (malloc)
+--26774-- REDIR: 0x4c57960 (libc.so.6:__strlen_avx2) redirected to 0x484ed10 (strlen)
+--26774-- REDIR: 0x4c53c00 (libc.so.6:__memcmp_avx2_movbe) redirected to 0x4852010 (bcmp)
+--26774-- REDIR: 0x4c52ac0 (libc.so.6:__strcmp_avx2) redirected to 0x484fbd0 (strcmp)
+--26774-- REDIR: 0x4c5a940 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x4852880 (memmove)
+--26774-- REDIR: 0x4c53440 (libc.so.6:__memchr_avx2) redirected to 0x484fd50 (memchr)
+--26774-- REDIR: 0x4c52990 (libc.so.6:__strspn_sse42) redirected to 0x4853d50 (strspn)
+--26774-- REDIR: 0x4b5f460 (libc.so.6:free) redirected to 0x484b210 (free)
+==26774== 
+==26774== Process terminating with default action of signal 2 (SIGINT)
+==26774==    at 0x4B4B106: __futex_abstimed_wait_common64 (futex-internal.c:57)
+==26774==    by 0x4B4B106: __futex_abstimed_wait_common (futex-internal.c:87)
+==26774==    by 0x4B4B106: __futex_abstimed_wait_cancelable64 (futex-internal.c:139)
+==26774==    by 0x4B56CF7: __new_sem_wait_slow64.constprop.0 (sem_waitcommon.c:183)
+==26774==    by 0x10B029: NamedSemaphore::Down() (named_semaphore.h:45)
+==26774==    by 0x10A8E2: Server::RunServer() (server.cc:45)
+==26774==    by 0x10AE67: main (server.cc:135)
+==26774== 
+==26774== HEAP SUMMARY:
+==26774==     in use at exit: 72,838 bytes in 5 blocks
+==26774==   total heap usage: 9 allocs, 4 frees, 72,972 bytes allocated
+==26774== 
+==26774== Searching for pointers to 5 not-freed blocks
+==26774== Checked 156,128 bytes
+==26774== 
+==26774== 24 bytes in 1 blocks are still reachable in loss record 1 of 5
+==26774==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==26774==    by 0x4BDA0E4: tsearch (tsearch.c:337)
+==26774==    by 0x4B56821: __sem_check_add_mapping (sem_routines.c:121)
+==26774==    by 0x4B5632E: sem_open@@GLIBC_2.34 (sem_open.c:81)
+==26774==    by 0x10B4C5: NamedSemaphore::Open() (named_semaphore.cc:32)
+==26774==    by 0x10A7A0: Server::Server() (server.cc:25)
+==26774==    by 0x10AE2D: main (server.cc:132)
+==26774== 
+==26774== 24 bytes in 1 blocks are still reachable in loss record 2 of 5
+==26774==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==26774==    by 0x4BDA14E: tsearch (tsearch.c:337)
+==26774==    by 0x4B56821: __sem_check_add_mapping (sem_routines.c:121)
+==26774==    by 0x4B5632E: sem_open@@GLIBC_2.34 (sem_open.c:81)
+==26774==    by 0x10B4C5: NamedSemaphore::Open() (named_semaphore.cc:32)
+==26774==    by 0x10A7B0: Server::Server() (server.cc:26)
+==26774==    by 0x10AE2D: main (server.cc:132)
+==26774== 
+==26774== 43 bytes in 1 blocks are still reachable in loss record 3 of 5
+==26774==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==26774==    by 0x4B567A8: __sem_check_add_mapping (sem_routines.c:104)
+==26774==    by 0x4B5632E: sem_open@@GLIBC_2.34 (sem_open.c:81)
+==26774==    by 0x10B4C5: NamedSemaphore::Open() (named_semaphore.cc:32)
+==26774==    by 0x10A7A0: Server::Server() (server.cc:25)
+==26774==    by 0x10AE2D: main (server.cc:132)
+==26774== 
+==26774== 43 bytes in 1 blocks are still reachable in loss record 4 of 5
+==26774==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==26774==    by 0x4B567A8: __sem_check_add_mapping (sem_routines.c:104)
+==26774==    by 0x4B5632E: sem_open@@GLIBC_2.34 (sem_open.c:81)
+==26774==    by 0x10B4C5: NamedSemaphore::Open() (named_semaphore.cc:32)
+==26774==    by 0x10A7B0: Server::Server() (server.cc:26)
+==26774==    by 0x10AE2D: main (server.cc:132)
+==26774== 
+==26774== 72,704 bytes in 1 blocks are still reachable in loss record 5 of 5
+==26774==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==26774==    by 0x491A979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+==26774==    by 0x400647D: call_init.part.0 (dl-init.c:70)
+==26774==    by 0x4006567: call_init (dl-init.c:33)
+==26774==    by 0x4006567: _dl_init (dl-init.c:117)
+==26774==    by 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+==26774== 
+==26774== LEAK SUMMARY:
+==26774==    definitely lost: 0 bytes in 0 blocks
+==26774==    indirectly lost: 0 bytes in 0 blocks
+==26774==      possibly lost: 0 bytes in 0 blocks
+==26774==    still reachable: 72,838 bytes in 5 blocks
+==26774==         suppressed: 0 bytes in 0 blocks
+==26774== 
+==26774== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
